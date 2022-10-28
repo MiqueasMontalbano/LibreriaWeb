@@ -1,0 +1,178 @@
+*{
+ margin: 0;
+padding: 0;
+box-sizing:border-box;
+  font-family:sans-serif;   
+    background-size: cover;
+}
+
+body{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  display: grid;
+grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+   background-image:url(img/13107748_5137843.jpg);
+ }
+ .container{
+width: 100%;
+height: 100vh;
+
+
+background-size: cover;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat; 
+}
+.navbar {
+  margin-top: top;
+  width: 100%;
+  margin: left;
+  background-color:#292c2f;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+     background-image:url(img/13107748_5137843.jpg);
+font-size: 1.25rem;
+}
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.navbar ul li a {
+  text-decoration: none;
+color: rgb(253, 253, 253);
+  font-family: Roboto, "sans-serif";
+}   
+.navbar ul li::before {
+  content: "";
+  height: 3px;
+ width: 0;
+  background:rgb(255, 251, 251);
+  position: absolute;    
+  bottom: -12%;
+  transition: 0.4s ease-out;
+}
+.navbar ul li:hover::before {
+  width: 100%;
+}
+
+.table{
+background-color: #292c2f;
+padding:0px;
+margin:150px;
+margin-left: 320px;
+margin-top: 50px;
+width: 800px;
+background-image:url(https://imgs.search.brave.com/t6ZW893Oc9_jYnyXBWPpqrW3iNSDgwC1oSmd1iTzgoE/rs:fit:509:339:1/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vcGhvdG9z/L3doaXRlLXdvb2Qt/dGV4dHVyZS1iYWNr/Z3JvdW5kLXBpY3R1/cmUtaWQ2OTU3NTc0/MDA_az02Jm09Njk1/NzU3NDAwJnM9MTcw/NjY3YSZ3PTAmaD1G/ZVJrTXFWTDlveEw4/ZU5NR3BXZUQtTm1C/a0llMFpwaUVZczE0/TE9wcVNnPQ);
+font-family: "Poppins-Regular";
+  color:#00000;
+border: solid black;
+}
+.containerr{
+ 
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.card{
+    
+  min-height:150px;
+  width: 200px;
+  margin:100px 70px;
+  padding:1rem;
+  cursor:pointer;
+ background-image:url(https://imgs.search.brave.com/t6ZW893Oc9_jYnyXBWPpqrW3iNSDgwC1oSmd1iTzgoE/rs:fit:509:339:1/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vcGhvdG9z/L3doaXRlLXdvb2Qt/dGV4dHVyZS1iYWNr/Z3JvdW5kLXBpY3R1/cmUtaWQ2OTU3NTc0/MDA_az02Jm09Njk1/NzU3NDAwJnM9MTcw/NjY3YSZ3PTAmaD1G/ZVJrTXFWTDlveEw4/ZU5NR3BXZUQtTm1C/a0llMFpwaUVZczE0/TE9wcVNnPQ);
+font-family: "Poppins-Regular";
+  color:#00000;
+  align-items: center;
+  
+}
+.card img{
+  width:100%;
+  height:160px;
+  border-radius:10px;
+  position:relative;
+  z-index:1000;
+  transition:all .5s ease-in-out;
+  
+}
+.card__content{
+  margin:1rem 0;
+  color:#222;
+  overflow:hidden;
+  margin-top:-80px;
+  opacity:0;
+  visibility:hidden;
+  transition:all .5s ease-in-out;
+  align-items: center;
+  
+}
+.card__content h2{
+  margin:.6rem auto;
+  text-align:center;
+  
+}
+.card__content p{
+  font-size:1.1rem;
+  line-height:1.8rem;
+  text-align:center;
+  
+}
+.card__content a{
+  width:200px;
+  padding:10px 15px;
+  display:block;
+  text-align:center;
+  margin:.6rem auto;
+  font-size:1.1rem;
+  color:#000000;
+  text-decoration:none;
+  background-color:#222;
+  border-radius:10px;
+  transition:.3s;
+}
+.card__content a:hover{
+  color:rgb(255, 255, 255);
+  background-color:#000;
+  box-shadow:0 0 2px 2px rgba(0,0,0,0.4);
+}
+.card:hover img{
+  margin-top:-0px;
+  box-shadow:0 0 4px 6px rgba(0,0,0,0.3);
+}
+.card:hover>.card__content{
+  margin-top:0;
+  opacity:1;
+  visibility:visible;
+}
+@media screen and (max-width:800px){
+  .container{
+    flex-wrap:wrap;
+  }
+}
+#titulo{
+margin-top: 100px;    
+text-align: center;
+font-size:70px;
+letter-spacing: 0.08em;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ background-image:url(https://imgs.search.brave.com/t6ZW893Oc9_jYnyXBWPpqrW3iNSDgwC1oSmd1iTzgoE/rs:fit:509:339:1/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vcGhvdG9z/L3doaXRlLXdvb2Qt/dGV4dHVyZS1iYWNr/Z3JvdW5kLXBpY3R1/cmUtaWQ2OTU3NTc0/MDA_az02Jm09Njk1/NzU3NDAwJnM9MTcw/NjY3YSZ3PTAmaD1G/ZVJrTXFWTDlveEw4/ZU5NR3BXZUQtTm1C/a0llMFpwaUVZczE0/TE9wcVNnPQ);
+ 
+text-transform: capitalize;
+border: solid black;
+width: 600px;
+margin-left: 460px;
+}
+#titulo:hover{
+
+font-size: 70px;
+}
+#boton{
+ margin-left: 1050px;   
+ 
+}
